@@ -1,0 +1,72 @@
+*{
+  background: white;
+}
+@import url(//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular);
+@font-face {
+  font-family: 'Appetite_New';
+  font-style: normal;
+  font-weight:lighter;
+  src:
+    url('./fonts/Appetite_New.otf')
+}
+@font-face {
+  font-family: 'avantgardemditc';
+  font-style: normal;
+  font-weight:lighter;
+  src:
+    url('./fonts/avantgardemditc-bold-webfont.woff')
+}
+
+.page-title{
+  font-family: 'Appetite_New';
+  font-size: 30px;
+}
+.page-info{
+ font-family: 'Brandon Grotesque Regular';
+ font-size: 13px;
+ padding:0;
+ line-height: 1.5;
+}
+span{
+  display: inline-block;
+  border-bottom: 1px solid #51ff8b;
+  line-height:1.2;
+  
+}
+
+/*****************/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 600ms;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+
+@keyframes fadeOut {
+  0% { opacity: 1;}
+  99% { opacity: 0.01;width: 100%; height: 100%;}
+  100% { opacity: 0;width: 0; height: 0; z-index:-1;}
+}
