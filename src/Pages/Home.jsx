@@ -4,16 +4,13 @@ import Title from "../Components/Title";
 
 const Home = () => {
   return (
-    <div className='inner'>
+    <div>
       <Title
-        title1='Hello, I am Fil' title2='Front-End Designer & Coder' 
-      />
-      <div>
-        <p className='other'>
-          Does project report used question death, out more rhetoric unpleasing
-          what compared both of sentinels.
-        </p>
-      </div>
+        title1='I am.'
+        title2='Fil Vilca ' />
+      <p className='page-info'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio perspiciatis ipsum tempora reiciendis. Sequi non eligendi reprehenderit ullam, voluptatibus id recusandae eveniet corporis harum omnis similique animi minus debitis doloribus ipsam blanditiis quae placeat at quam numquam. Blanditiis aliquam deleniti quo! Magnam impedit dolore illum nemo architecto soluta officia.
+      </p>
     </div>
   );
 };

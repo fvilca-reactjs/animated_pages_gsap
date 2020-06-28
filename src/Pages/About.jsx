@@ -8,32 +8,21 @@ function About() {
     console.clear();
     console.log('prev:', localStorage.getItem('prev'))
     console.log('current:', localStorage.getItem('current'))
-
-    let pageInfo = useRef(null)
-
-    useEffect(() => {
-        TweenMax.from(pageInfo, {
-            delay: 0.5,
-            y: 0,
-            opacity: 0,
-        })
-    }, [])
     let prev;
     prev = localStorage.getItem('prev');
     if (prev === 'Home')
         prev = <Home transition='page-exit' />
-    else prev= null;
+    else prev = null;
 
     return (
-        <>
-            
+        <div>
             <Title
-                title1='Lorem ipsum.'
-                title2='Lorem ' />
-            <p className='page-info' ref={(el) => pageInfo = el}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio perspiciatis ipsum tempora reiciendis. Sequi non eligendi reprehenderit ullam, voluptatibus id recusandae eveniet corporis harum omnis similique animi minus debitis doloribus ipsam blanditiis quae placeat at quam numquam. Blanditiis aliquam deleniti quo! Magnam impedit dolore illum nemo architecto soluta officia.
+                title1='About .'
+                title2='Us ' />
+            <p className='page-info'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In consequuntur quo eligendi facere! Mollitia, amet, voluptatibus veniam perspiciatis quae illum sint qui officia aliquam fuga delectus cupiditate temporibus iure ratione earum quasi veritatis dolorem molestias beatae harum! Obcaecati qui nihil accusamus at! Dolorum quos sequi inventore rerum corporis necessitatibus consequatur? Labore vitae suscipit illo? Mollitia fuga dicta incidunt aperiam velit sit natus provident perferendis cupiditate, blanditiis vel. Praesentium facilis quibusdam eligendi architecto unde. Ea, reiciendis earum sunt nulla laborum repellat accusamus temporibus, et consectetur voluptatibus dicta voluptatum! Sit, officia et. Dolore quaerat cumque soluta magni sapiente tenetur commodi repudiandae aut.
             </p>
-        </>
+        </div>
     )
 }
 

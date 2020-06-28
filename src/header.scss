@@ -14,6 +14,9 @@ $indicator-color: #51ff8b;
     text-decoration: none;
     font-size: 12px;
     font-family: "Brandon Grotesque Regular";
+    &:active{
+      color: $indicator-color;
+    }
   }
 
   .Nav-item {

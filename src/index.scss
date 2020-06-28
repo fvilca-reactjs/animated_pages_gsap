@@ -2,6 +2,7 @@
   background: white;
 }
 @import url(//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular);
+
 @font-face {
   font-family: 'Appetite_New';
   font-style: normal;
@@ -48,6 +49,39 @@ span{
 }
 
 
+.container {
+  position: relative;
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  .page {
+    position: absolute;
+    .inner {
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-family: "Bebas Neue";
+        font-size: 52px;
+        letter-spacing: 0.1rem;
+        .line-wrap {
+          overflow: hidden;
+          height: 66px;
+        }
+      }
+      p {
+        font-family: "Poppins";
+        margin-top: 200px;
+        width: 340px;
+        font-weight: 300;
+        line-height: 24px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 .page-enter {
   opacity: 0;
 }
@@ -63,6 +97,7 @@ span{
   opacity: 0;
   transition: opacity 400ms;
 }
+
 
 
 @keyframes fadeOut {
