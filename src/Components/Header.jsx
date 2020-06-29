@@ -9,7 +9,9 @@ function Header({ handleNavigatioState }) {
                 to={{ pathname: '/', myCustomProps: 'algo' }}
                 exact className='Nav-item is-active' name='Home' onClick={(e) => handleNavigatioState(e)}>Home</Link>
             <Link to='/about' exact className='Nav-item' name='About' onClick={(e) => handleNavigatioState(e)}>About</Link>
+            <Link to='/over' exact className='Nav-item' name='OverEffects' onClick={(e) => handleNavigatioState(e)}>Over Effects</Link>
             <Link to='/contact' exact className='Nav-item' name='Contact' onClick={(e) => handleNavigatioState(e)}>Contact</Link>
+            
         </nav>
     )
 }

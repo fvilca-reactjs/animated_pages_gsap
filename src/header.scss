@@ -14,9 +14,12 @@ $indicator-color: #51ff8b;
     text-decoration: none;
     font-size: 12px;
     font-family: "Brandon Grotesque Regular";
-    &:active{
+    transition: 1s;
+    cursor: pointer;
+    &:focus {
       color: $indicator-color;
     }
+
   }
 
   .Nav-item {
@@ -26,7 +29,7 @@ $indicator-color: #51ff8b;
     &:last-child {
       border-radius: 0 3px 3px 0;
     }
-    &.is-active {
+    &active {
       color: $indicator-color;
     }
     &:hover {
@@ -34,4 +37,5 @@ $indicator-color: #51ff8b;
     }
   }
 }
+
 
