@@ -1,0 +1,33 @@
+@function color1($alpha) {
+  @return rgba(100, 100, 100, $alpha);
+}
+@function color2($alpha) {
+  @return rgba(255, 255, 255, $alpha);
+}
+
+
+.dot {
+  //position: absolute;
+  //top: 50%;
+  //left: 0%;
+  z-index: 5;
+  transform: scale(1, 1);
+  filter: blur(3px);
+  width: 10px;
+  height: 10px;
+  background:color1(1);
+  border-radius: 50%;
+  
+                
+  transition: 0.5s;
+  &:hover {
+    filter: blur(0.1px);
+
+    box-shadow: 0 0 0px 2px color2(1),
+                0 0 0px 3px color1(0.4),
+                0 0 0px 4px color2(1),
+                0 0 0px 5px color1(0.5),
+                0 0 0px 6px color2(1),
+                0 0 0px 7px color1(0.6);
+  }
+}
