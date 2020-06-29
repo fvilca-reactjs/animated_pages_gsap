@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Title from '../Components/Title'
 import Home from '../Pages/Home'
-import { TweenMax } from 'gsap'
+
 
 function About() {
     //console.log(props.location.myCustomProps)

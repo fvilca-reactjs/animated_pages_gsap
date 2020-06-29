@@ -7,7 +7,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import OverEffects from './Pages/hover/hover'
-
+import SpriteSheet from './Pages/spritesheet/spritesheet'
 import Header from './Components/Header';
 
 import { CSSTransition } from "react-transition-group";
@@ -17,9 +17,8 @@ const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/about", name: "About", Component: About },
   { path: "/over", name: "Over", Component: OverEffects },
-  { path: "/contact", name: "Contact", Component: Contact }
-  
-  
+  { path: "/contact", name: "Contact", Component: Contact },
+  { path: "/sprites", name: "Sprite", Component: SpriteSheet }
 ];
 
 const handleNavigatioState = (e) => {

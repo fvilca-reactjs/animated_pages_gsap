@@ -11,6 +11,7 @@ function Header({ handleNavigatioState }) {
             <Link to='/about' exact className='Nav-item' name='About' onClick={(e) => handleNavigatioState(e)}>About</Link>
             <Link to='/over' exact className='Nav-item' name='OverEffects' onClick={(e) => handleNavigatioState(e)}>Over Effects</Link>
             <Link to='/contact' exact className='Nav-item' name='Contact' onClick={(e) => handleNavigatioState(e)}>Contact</Link>
+            <Link to='/sprites' exact className='Nav-item' name='Sprites' onClick={(e) => handleNavigatioState(e)}>Sprites</Link>
             
         </nav>
     )

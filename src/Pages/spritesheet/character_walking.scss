@@ -1,0 +1,28 @@
+$pixel-size:10;
+
+* {
+  background-color: darkslategray;
+  color: white;
+}
+.sprite-sheet-wrapper {
+  height: 32px*$pixel-size;
+  width: 32px*$pixel-size;
+  background-color: red;
+  overflow: hidden;
+  border: 2px solid blue;
+}
+.sprite-sheet {
+height:32px*4*$pixel-size;
+width: 32px*4*$pixel-size;
+  animation: sprite-sheet-animated 1s steps(4) infinite;
+  image-rendering:pixelated;
+}
+
+@keyframes sprite-sheet-animated {
+  from {
+    transform: translate3d(0px,0, 0);
+  }
+  to {
+    transform: translate3d(-100%,0, 0);
+  }
+}
