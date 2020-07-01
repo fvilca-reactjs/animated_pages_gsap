@@ -1,28 +1,46 @@
-$pixel-size:10;
+$pixel-size: 10;
 
 * {
-  background-color: darkslategray;
-  color: white;
+  //background-color: darkslategray;
+  //color: white;
 }
 .sprite-sheet-wrapper {
-  height: 32px*$pixel-size;
-  width: 32px*$pixel-size;
-  background-color: red;
+  height: 32px * $pixel-size;
+  width: 32px * $pixel-size;
+  //background-color: red;
   overflow: hidden;
-  border: 2px solid blue;
+  //border: 2px solid blue;
+  position: relative;
 }
 .sprite-sheet {
-height:32px*4*$pixel-size;
-width: 32px*4*$pixel-size;
+  position: absolute;
+  height: 32px * 4 * $pixel-size;
+  width: 32px * 4 * $pixel-size;
   animation: sprite-sheet-animated 1s steps(4) infinite;
-  image-rendering:pixelated;
+  image-rendering: pixelated;
+  top:0;
+  left:0;
+  //z-index: 1;
 }
 
 @keyframes sprite-sheet-animated {
   from {
-    transform: translate3d(0px,0, 0);
+    transform: translate3d(0px, 0, 0);
   }
   to {
-    transform: translate3d(-100%,0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
+}
+.shadow{
+  position: absolute;
+  height: 10px * 1 * $pixel-size;
+  width: 8px * 1 * $pixel-size;
+  top:250px;
+  left:120px;
+  border: 2px solid red;
+  border-radius: 50%;
+  
+  background-color: black;
+  transform: scaleY(0.2);
+  filter: blur(30px);
 }

@@ -1,5 +1,5 @@
 *{
-  background: white;
+  //background: white;
 }
 @import url(//db.onlinewebfonts.com/c/af1f9cf6d51df55b85e1b496776585c4?family=Brandon+Grotesque+Regular);
 
@@ -103,17 +103,14 @@ span{
   opacity: 0;
   transition: opacity 2s;
 }
-.page-other{
+.other{
   //color:#f5004f;
-  animation: fadeOut 0.5s
+  animation: fadeOut 0.1s
 }
-
-
 @keyframes fadeOut {
   0% { color:white;}
   30% { color:black;}
   60% { color:white;}
-  100% { color:black;}
-  
-  
+  100% { color:black;} 
 }
+

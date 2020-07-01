@@ -13,11 +13,12 @@ const SpriteSheet = () => {
             </p>
 
             <div className='sprite-sheet-wrapper'>
+                
+                <div className='shadow'/>
                 <img className="sprite-sheet" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacter.png" alt="character" />
             </div>
 
-            <img className='shadow'
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="shadow" />
+            
         </div>
     );
 };

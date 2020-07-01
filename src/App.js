@@ -12,13 +12,17 @@ import Header from './Components/Header';
 
 import { CSSTransition } from "react-transition-group";
 import { gsap } from "gsap";
+import Texts from './Pages/texts/Texts';
+import Spinners from './Pages/spinners/Spinners';
 
 const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/about", name: "About", Component: About },
   { path: "/over", name: "Over", Component: OverEffects },
   { path: "/contact", name: "Contact", Component: Contact },
-  { path: "/sprites", name: "Sprite", Component: SpriteSheet }
+  { path: "/sprites", name: "Sprite", Component: SpriteSheet },
+  { path: "/texts", name: "Texts", Component: Texts },
+  { path: "/spinners", name: "Spinners", Component: Spinners },
 ];
 
 const handleNavigatioState = (e) => {
@@ -64,9 +68,10 @@ function App() {
   };
 
   const onExit = node => {
-    node.children[0].lastElementChild.classList.add("page-other");
+    node.children[0].lastElementChild.classList.add("other");
+    
 
-    gsap.to(
+    /*gsap.to(
       [node.children[0].firstElementChild, node.children[0].lastElementChild],
       2,
       {
@@ -77,7 +82,7 @@ function App() {
           amount: 0.9
         }
       }
-    );
+    );*/
   };
 
   return (
