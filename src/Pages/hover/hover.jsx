@@ -23,7 +23,7 @@ function OverEffects() {
                 repeat: 1
             })
             animation.play();
-        }, 2000)
+        }, 3000)
 
 
     }, [])

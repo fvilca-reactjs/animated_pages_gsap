@@ -2,24 +2,26 @@
 
 .shining-text-wrapper{
   display: flex;
-  align-items: center;
+  //align-items: center;
 
   .text {
     font-family: "Lato";
     text-transform: uppercase;
     font-size: 2em;
     letter-spacing: 6px;
-    background:linear-gradient(90deg,white, black, white);
-    background-repeat: no-repeat;
-    background-size:80%;
-    animation: animate 3s linear infinite;
+    background:linear-gradient(-90deg,white, black, white);
+    //background-repeat: no-repeat;
+    //background-size:80%;
+    animation: animate 2s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 
   }
 
   @keyframes animate{
-      0%{ background-position: -500%;}
-      100%{background-position: 500%;}
+    0%{ transform: translate(); }
+    100%{ background-position: -100% }
+      //50%{ background-position: -100% }
+      //100%{background-position: 100%}
   }
 }
