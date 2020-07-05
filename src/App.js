@@ -14,6 +14,7 @@ import { CSSTransition } from "react-transition-group";
 import { gsap } from "gsap";
 import Texts from './Pages/texts/Texts';
 import Spinners from './Pages/spinners/Spinners';
+import Cards from './Pages/cards/cards'
 
 const routes = [
   { path: "/", name: "Home", Component: Home },
@@ -23,6 +24,7 @@ const routes = [
   { path: "/sprites", name: "Sprite", Component: SpriteSheet },
   { path: "/texts", name: "Texts", Component: Texts },
   { path: "/spinners", name: "Spinners", Component: Spinners },
+  { path: "/cards", name: "Cards", Component: Cards },
 ];
 
 const handleNavigatioState = (e) => {
